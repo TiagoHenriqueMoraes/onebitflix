@@ -8,7 +8,7 @@ class Api::V1::SerieSerializer
       {
         title: e.title,
         id: e.id,
-        thumbnail_url:  "/thumbnails/#{e.thumbnail_key}"
+        thumbnail_url: "/thumbnails/#{e.thumbnail_key}"
       }
     end
   end

@@ -18,7 +18,8 @@ gem 'devise'
 gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi", branch: "dev"
 gem 'pg_search'
 gem 'aws-sdk-s3'
-
+gem 'webpacker'
+gem 'foreman'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
