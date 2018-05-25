@@ -8,7 +8,7 @@ class Api::V1::SerieSerializer
       {
         title: e.title,
         id: e.id,
-        thumbnail_url:  AWS_BUCKET.object("thumbnails/#{e.thumbnail_key}").presigned_url(:get, expires_in: 120)
+        thumbnail_url:  "/thumbnails/#{e.thumbnail_key}"
       }
     end
   end
@@ -41,7 +41,7 @@ class Api::V1::SerieSerializer
 
   attribute :featured_thumbnail_url do |object|
     if object[:featured_thumbnail_key].present?
-      "/videos/#{object.video_key}"
+      "/thumbnails/#{object.featured_thumbnail_key}"
     end
   end
 end

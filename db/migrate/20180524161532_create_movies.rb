@@ -3,7 +3,7 @@ class CreateMovies < ActiveRecord::Migration[5.1]
     create_table :movies do |t|
       t.boolean :highlighted, default: false 
       t.string :title
-      t.text :desrcription
+      t.text :description
       t.string :thumbnail_key
       t.string :video_key
       t.integer :episode_number

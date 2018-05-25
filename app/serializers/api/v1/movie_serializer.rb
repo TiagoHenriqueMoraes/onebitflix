@@ -27,7 +27,7 @@ class Api::V1::MovieSerializer
 
   attribute :featured_thumbnail_url do |object|
     if object[:featured_thumbnail_key].present?
-      "/videos/#{object.video_key}"
+      "/thumbnails/#{object.featured_thumbnail_key}"
     end
   end
 
